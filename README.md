@@ -25,3 +25,21 @@ $ npm install -g typescript
 $ tsc -v
 Version 3.9.3
 ```
+
+  - 挙動チェック
+
+    - `hello.ts`
+
+    ```
+    let hello: string = 'Hello, im!';
+    console.log(hello);
+    ```
+
+    - コンパイル実行（ターミナル）
+
+    ```
+    $ tsc hello.ts
+
+    $ node hello.js
+    Hello, im!
+    ```
