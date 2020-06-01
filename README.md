@@ -10,6 +10,10 @@
 
 - macOS 10.14.6
 
+- VSCode
+
+- 言語/その他
+
   | | バージョン | 備考 |
   | :-- | :-- | :-- |
   | TypeScript | 3.9.3 | |
@@ -18,7 +22,7 @@
 
 ### セットアップ
 
-```
+```js
 $ npm install -g typescript
 
 // 確認
@@ -26,20 +30,26 @@ $ tsc -v
 Version 3.9.3
 ```
 
-  - 挙動チェック
+- 挙動チェック
 
-    - `hello.ts`
+  - `hello.ts`
 
-    ```
+    ```ts
     let hello: string = 'Hello, im!';
     console.log(hello);
     ```
 
-    - コンパイル実行（ターミナル）
+    - 型の確認：変数`hello`にカーソルをホバリングすると型表示される。  
+    （VSCode内蔵のTSによる機能）
 
-    ```
+  - コンパイル実行（ターミナル）
+
+    ```js
     $ tsc hello.ts
 
+    // 生成された hello.js を実行
     $ node hello.js
     Hello, im!
     ```
+
+
