@@ -65,5 +65,13 @@
     /* Advanced Options */
     "skipLibCheck": true,                     /* Skip type checking of declaration files. */
     "forceConsistentCasingInFileNames": true  /* Disallow inconsistently-cased references to the same file. */
-  }
+  },
+  "include": [
+    "tsc_watch.ts"
+  ],
+  "exclude": [
+    "*.spec.ts",
+    "**/compile_all_at_once.ts",  // 別階層にあると効かないので、それ回避のためにワイルドカードを使う。
+    "node_modules"  // exclude指定する際は、node_modules/がデフォルト除外されなくなるので、明示する必要あり。
+  ]
 }
