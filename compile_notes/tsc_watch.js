@@ -1,3 +1,4 @@
+"use strict";
 // * Watchモード
 //（自動化ユニットテストみたいに自動でコンパイルしてくれるモード）
 // tsc tsc_watch.ts --watch
