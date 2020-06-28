@@ -5,6 +5,6 @@ class Person {
   }
 }
 
-const im = new Person('im');
+const im = new Person("im");
 
-console.log('Person result :', im)
+console.log("Person result :", im);

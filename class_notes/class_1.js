@@ -4,5 +4,5 @@ var Person = /** @class */ (function () {
     }
     return Person;
 }());
-var im = new Person('im');
-console.log('Person result :', im);
+var im = new Person("im");
+console.log("Person result :", im);
